@@ -20,11 +20,11 @@ installTheme(){
     apt install sudo -y > /dev/null 2>&1
     cd /var/www/ > /dev/null 2>&1
     echo -e "${GREEN}Unpack the themebackup...${RESET}"
-    tar -cvf Pterodactyl_Nightcore_Themebackup.tar.gz pterodactyl > /dev/null 2>&1
+    tar -cvf topatheam.tar.gz pterodactyl > /dev/null 2>&1
     echo -e "${GREEN}Installing theme... ${RESET}"
     cd /var/www/pterodactyl > /dev/null 2>&1
     echo -e "${GREEN}Removing old theme if exist${RESET}"
-    rm -r Pterodactyl_Nightcore_Theme > /dev/null 2>&1
+    rm -r topatheam > /dev/null 2>&1
     echo -e "${GREEN}Download the Theme${RESET}"
     git clone https://github.com/Aiweb22/topatheam.git > /dev/null 2>&1
     cd topatheam/main > /dev/null 2>&1
